@@ -8,10 +8,14 @@ module Deckbrew
 
       def to_s
         queries.keys.map do |query|
-          return "" if queries[query].nil?
-          "#{query}=#{queries[query]}&"
+          if queries[query].nil?
+            ''
+          elsif query == "color"
+            digest_color(queries[query])
+          else
+            "#{query}=#{queries[query]}&"
+          end
         end.join
-        binding.pry
       end
 
       private
