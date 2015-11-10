@@ -14,40 +14,76 @@ module Deckbrew
       COLORS = '/mtg/colors'
 
       def self.get_all_cards
-        get CARDS
+        resp = get CARDS
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_card(id)
-        get "#{CARDS}/#{id}"
+        resp = get "#{CARDS}/#{id}"
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_cards_filter(queries)
         url = Deckbrew::Tools::UrlQueryGenerator.new(queries)
-        get "#{CARDS}?#{url.to_s}"
+        resp = get "#{CARDS}?#{url.to_s}"
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_all_sets
-        get SETS
+        resp = get SETS
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_set(id)
-        get "#{SETS}/#{id}"
+        resp = get "#{SETS}/#{id}"
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_types
-        get TYPES
+        resp = get TYPES
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_supertypes
-        get SUPERTYPES
+        resp = get SUPERTYPES
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_subtypes
-        get SUBTYPES
+        resp = get SUBTYPES
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
 
       def self.get_colors
-        get COLORS
+        resp = get COLORS
+        return { 
+          body: resp.parsed_response,
+          raw: resp
+        }
       end
     end
   end

@@ -1,5 +1,3 @@
-require 'pry'
-
 module Deckbrew
   class Card
     def self.all
