@@ -1,3 +1,5 @@
+require 'httparty'
+
 module Deckbrew
   module API
     class DeckbrewAPI

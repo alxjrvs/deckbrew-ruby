@@ -6,5 +6,4 @@ require "deckbrew/magic_metadata"
 require "deckbrew/magic_set"
 
 module Deckbrew
-  binding.pry
 end
