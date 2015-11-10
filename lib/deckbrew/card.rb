@@ -1,3 +1,5 @@
+require 'pry'
+
 module Deckbrew
   class Card
     def self.all
@@ -7,20 +9,6 @@ module Deckbrew
     def self.find(id)
       Config.api.get_card(id)
     end
-
-    # type  []string  Any valid card type. Possible values include enchantment and
-    # subtype []string  Any valid card subtype. Possible values include zombie and tribal.
-    # supertype []string  Any valid card supertype, such as legendary
-    # name  []string  A fuzzy match on a card's name
-    # oracle  []string  A fuzzy match on a card's Oracle rules text
-    # set []string  A three letter identifier for a Magic set
-    # rarity  []string  Select cards printed at this rarity. Options are common, uncommon, rare and mythic
-    # color []string  Select cards of the chosen color
-    # multicolor  bool  Only show cards that are multicolored. Legal values are true and false
-    # multiverseid  []string  Select cards of that have at least one edition with the given Multiverse ID
-    # m []string  Shortcut for Multiverse ID
-    # format  []string  Only show cards allowed in a specific format. Legal values are vintage, legacy, modern, standard, and commander
-    # status  []string  Only show cards with the given status. Legal values are legal, banned or restricted
 
     def self.where(
       type: nil, 
@@ -37,11 +25,22 @@ module Deckbrew
       status: nil, 
       m: nil
     )
-      binding.pry
-      Config.api.get_cards_filter(
-         
-
-      )
+      queries = {
+        type: type, 
+        subtype: subtype, 
+        supertype: supertype, 
+        name: name, 
+        oracle: oracle, 
+        set: set, 
+        rarity: rarity, 
+        color: color, 
+        multicolor: multicolor, 
+        multiverseid: multiverseid, 
+        format: format, 
+        status: status, 
+        m: m
+      }
+      Config.api.get_cards_filter queries
     end
   end
 end

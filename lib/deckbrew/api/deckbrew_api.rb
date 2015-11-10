@@ -3,7 +3,7 @@ require 'httparty'
 module Deckbrew
   module API
     class DeckbrewAPI
-      include Httparty
+      include HTTParty
       base_uri 'https://api.deckbrew.com'
 
       CARDS = '/mtg/cards'
@@ -21,9 +21,10 @@ module Deckbrew
         get "#{CARDS}/#{id}"
       end
 
-      def self.get_cards_filter()
-        queries = {}
-        get CARDS, queries
+      def self.get_cards_filter(queries)
+        url = Deckbrew::Tools::UrlQueryGenerator.new(queries)
+        binding.pry
+        get "#{CARDS}?#{url.to_s}"
       end
 
       def self.get_all_sets
