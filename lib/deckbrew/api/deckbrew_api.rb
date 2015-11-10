@@ -23,7 +23,6 @@ module Deckbrew
 
       def self.get_cards_filter(queries)
         url = Deckbrew::Tools::UrlQueryGenerator.new(queries)
-        binding.pry
         get "#{CARDS}?#{url.to_s}"
       end
 

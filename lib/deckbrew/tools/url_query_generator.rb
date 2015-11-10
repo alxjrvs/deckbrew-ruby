@@ -2,6 +2,17 @@ require 'pry'
 module Deckbrew
   module Tools
     class UrlQueryGenerator
+
+      MULTI_QUERYABLE = [
+        :color, 
+        :type,
+        :subtype,
+        :supertype,
+        :rarity,
+        :format,
+        :status
+
+      ]
       def initialize(queries)
         @queries = queries
       end
@@ -10,10 +21,10 @@ module Deckbrew
         queries.keys.map do |query|
           if queries[query].nil?
             ''
-          elsif query == "color"
-            digest_color(queries[query])
+          elsif query_multiple?(query)
+            digest key: query
           else
-            "#{query}=#{queries[query]}&"
+            format_string(query, queries[query])
           end
         end.join
       end
@@ -21,9 +32,18 @@ module Deckbrew
       private
       attr_reader :queries
 
-      def digest_color(colors)
-        colors.map do |color|
-          "color=#{color}&"
+      def format_string(query, val)
+        "#{query}=#{val}&"
+      end
+
+      def query_multiple?(query)
+        MULTI_QUERYABLE.include? query
+      end
+
+      def digest(key:)
+        values = queries[key]
+        values.map do |val|
+          format_string key, val
         end.join
       end
     end
