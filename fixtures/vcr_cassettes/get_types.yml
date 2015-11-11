@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deckbrew.com/mtg/types
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Wed, 11 Nov 2015 01:29:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '130'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d87b36046dc1022a0ceebcafa77234ed51447205394; expires=Thu, 10-Nov-16
+        01:29:54 GMT; path=/; domain=.deckbrew.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - link,content-length
+      Cache-Control:
+      - public,max-age=3600
+      Disclaimer:
+      - This API is not produced, endorsed, supported, or affiliated with Wizards
+        of the Coast.
+      License:
+      - 'The textual information presented through this API about Magic: The Gathering
+        is copyrighted by Wizards of the Coast.'
+      Pricing:
+      - store.tcgplayer.com allows you to buy cards from any of our vendors, all at
+        the same time, in a simple checkout experience. Shop, Compare & Save with
+        TCGplayer.com!
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 vegur
+      Cf-Ray:
+      - 24363a96a7f906af-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          "artifact",
+          "conspiracy",
+          "creature",
+          "enchantment",
+          "instant",
+          "land",
+          "phenomenon",
+          "plane",
+          "planeswalker",
+          "scheme",
+          "sorcery",
+          "tribal",
+          "vanguard"
+        ]
+    http_version: 
+  recorded_at: Wed, 11 Nov 2015 01:29:55 GMT
+recorded_with: VCR 3.0.0

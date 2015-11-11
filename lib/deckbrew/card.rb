@@ -9,32 +9,32 @@ module Deckbrew
     end
 
     def self.where(
-      type: nil, 
-      subtype: nil, 
-      supertype: nil, 
+      types: nil, 
+      subtypes: nil, 
+      supertypes: nil, 
       name: nil, 
       oracle: nil, 
-      set: nil, 
+      sets: nil, 
       rarity: nil, 
-      color: nil, 
+      colors: nil, 
       multicolor: nil, 
       multiverseid: nil, 
-      format: nil, 
+      formats: nil, 
       status: nil, 
       m: nil
     )
       queries = {
-        type: type, 
-        subtype: subtype, 
-        supertype: supertype, 
+        type: types, 
+        subtype: subtypes, 
+        supertype: supertypes, 
         name: name, 
         oracle: oracle, 
-        set: set, 
+        set: sets, 
         rarity: rarity, 
-        color: color, 
+        color: colors, 
         multicolor: multicolor, 
         multiverseid: multiverseid, 
-        format: format, 
+        format: formats, 
         status: status, 
         m: m
       }

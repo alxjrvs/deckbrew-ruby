@@ -1,0 +1,616 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deckbrew.com/mtg/cards?colors=%5B%22red%22,%20%22blue%22%5D&set=UNH&type=sorcery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 10 Nov 2015 22:42:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d318400a73cfff008b912468c1b1c2bbf1447195347; expires=Wed, 09-Nov-16
+        22:42:27 GMT; path=/; domain=.deckbrew.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - link,content-length
+      Cache-Control:
+      - public,max-age=3600
+      Disclaimer:
+      - This API is not produced, endorsed, supported, or affiliated with Wizards
+        of the Coast.
+      License:
+      - 'The textual information presented through this API about Magic: The Gathering
+        is copyrighted by Wizards of the Coast.'
+      Link:
+      - <https://api.deckbrew.com/mtg/cards?colors=%5B%22red%22%2C+%22blue%22%5D&page=1&set=UNH&type=sorcery>;
+        rel="next"
+      Pricing:
+      - store.tcgplayer.com allows you to buy cards from any of our vendors, all at
+        the same time, in a simple checkout experience. Shop, Compare & Save with
+        TCGplayer.com!
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 vegur
+      Cf-Ray:
+      - 2435454b0f401846-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        WwogIHsKICAgICJuYW1lIjogIkFzcyBXaHVwcGluJyIsCiAgICAiaWQiOiAi
+        YXNzLXdodXBwaW4iLAogICAgInVybCI6ICJodHRwczovL2FwaS5kZWNrYnJl
+        dy5jb20vbXRnL2NhcmRzL2Fzcy13aHVwcGluIiwKICAgICJzdG9yZV91cmwi
+        OiAiaHR0cDovL3N0b3JlLnRjZ3BsYXllci5jb20vbWFnaWMvcHJvZHVjdC9z
+        aG93P3BhcnRuZXI9REVDS0JSRVdcdTAwMjZQcm9kdWN0TmFtZT1hc3Mtd2h1
+        cHBpbiIsCiAgICAidHlwZXMiOiBbCiAgICAgICJzb3JjZXJ5IgogICAgXSwK
+        ICAgICJjb2xvcnMiOiBbCiAgICAgICJibGFjayIsCiAgICAgICJ3aGl0ZSIK
+        ICAgIF0sCiAgICAiY21jIjogMywKICAgICJjb3N0IjogInsxfXtXfXtCfSIs
+        CiAgICAidGV4dCI6ICJEZXN0cm95IHRhcmdldCBzaWx2ZXItYm9yZGVyZWQg
+        cGVybWFuZW50IGluIGFueSBnYW1lIHlvdSBjYW4gc2VlIGZyb20geW91ciBz
+        ZWF0LiIsCiAgICAiZm9ybWF0cyI6IHt9LAogICAgImVkaXRpb25zIjogWwog
+        ICAgICB7CiAgICAgICAgInNldCI6ICJVbmhpbmdlZCIsCiAgICAgICAgInNl
+        dF9pZCI6ICJVTkgiLAogICAgICAgICJyYXJpdHkiOiAicmFyZSIsCiAgICAg
+        ICAgImFydGlzdCI6ICJEb24gSGF6ZWx0aW5lIiwKICAgICAgICAibXVsdGl2
+        ZXJzZV9pZCI6IDc0MzI5LAogICAgICAgICJmbGF2b3IiOiAiQXNzZXMgdG8g
+        YXNoZXMsXG5Eb25rZXlzIHRvIGR1c3QuIiwKICAgICAgICAibnVtYmVyIjog
+        IjExNyIsCiAgICAgICAgImxheW91dCI6ICJub3JtYWwiLAogICAgICAgICJw
+        cmljZSI6IHsKICAgICAgICAgICJsb3ciOiAwLAogICAgICAgICAgIm1lZGlh
+        biI6IDAsCiAgICAgICAgICAiaGlnaCI6IDAKICAgICAgICB9LAogICAgICAg
+        ICJ1cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcuY29tL210Zy9jYXJkcz9t
+        dWx0aXZlcnNlaWQ9NzQzMjkiLAogICAgICAgICJpbWFnZV91cmwiOiAiaHR0
+        cHM6Ly9pbWFnZS5kZWNrYnJldy5jb20vbXRnL211bHRpdmVyc2VpZC83NDMy
+        OS5qcGciLAogICAgICAgICJzZXRfdXJsIjogImh0dHBzOi8vYXBpLmRlY2ti
+        cmV3LmNvbS9tdGcvc2V0cy9VTkgiLAogICAgICAgICJzdG9yZV91cmwiOiAi
+        aHR0cDovL3N0b3JlLnRjZ3BsYXllci5jb20vbWFnaWMvdW5oaW5nZWQvYXNz
+        LXdodXBwaW4/cGFydG5lcj1ERUNLQlJFVyIKICAgICAgfSwKICAgICAgewog
+        ICAgICAgICJzZXQiOiAiUmVsZWFzZSBFdmVudHMiLAogICAgICAgICJzZXRf
+        aWQiOiAicFJFTCIsCiAgICAgICAgInJhcml0eSI6ICJzcGVjaWFsIiwKICAg
+        ICAgICAiYXJ0aXN0IjogIkRvbiBIYXplbHRpbmUiLAogICAgICAgICJtdWx0
+        aXZlcnNlX2lkIjogMCwKICAgICAgICAiZmxhdm9yIjogIkFzc2VzIHRvIGFz
+        aGVzLFxuRG9ua2V5cyB0byBkdXN0LiIsCiAgICAgICAgIm51bWJlciI6ICIy
+        IiwKICAgICAgICAibGF5b3V0IjogIm5vcm1hbCIsCiAgICAgICAgInByaWNl
+        IjogewogICAgICAgICAgImxvdyI6IDAsCiAgICAgICAgICAibWVkaWFuIjog
+        MCwKICAgICAgICAgICJoaWdoIjogMAogICAgICAgIH0sCiAgICAgICAgInVy
+        bCI6ICJodHRwczovL2FwaS5kZWNrYnJldy5jb20vbXRnL2NhcmRzP211bHRp
+        dmVyc2VpZD0wIiwKICAgICAgICAiaW1hZ2VfdXJsIjogImh0dHBzOi8vaW1h
+        Z2UuZGVja2JyZXcuY29tL210Zy9tdWx0aXZlcnNlaWQvMC5qcGciLAogICAg
+        ICAgICJzZXRfdXJsIjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcv
+        c2V0cy9wUkVMIiwKICAgICAgICAic3RvcmVfdXJsIjogImh0dHA6Ly9zdG9y
+        ZS50Y2dwbGF5ZXIuY29tL21hZ2ljL3JlbGVhc2UtZXZlbnRzL2Fzcy13aHVw
+        cGluP3BhcnRuZXI9REVDS0JSRVciCiAgICAgIH0KICAgIF0KICB9LAogIHsK
+        ICAgICJuYW1lIjogIkVudGVyIHRoZSBEdW5nZW9uIiwKICAgICJpZCI6ICJl
+        bnRlci10aGUtZHVuZ2VvbiIsCiAgICAidXJsIjogImh0dHBzOi8vYXBpLmRl
+        Y2ticmV3LmNvbS9tdGcvY2FyZHMvZW50ZXItdGhlLWR1bmdlb24iLAogICAg
+        InN0b3JlX3VybCI6ICJodHRwOi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdp
+        Yy91bmhpbmdlZC9lbnRlci10aGUtZHVuZ2Vvbj9wYXJ0bmVyPURFQ0tCUkVX
+        IiwKICAgICJ0eXBlcyI6IFsKICAgICAgInNvcmNlcnkiCiAgICBdLAogICAg
+        ImNvbG9ycyI6IFsKICAgICAgImJsYWNrIgogICAgXSwKICAgICJjbWMiOiAy
+        LAogICAgImNvc3QiOiAie0J9e0J9IiwKICAgICJ0ZXh0IjogIlBsYXllcnMg
+        cGxheSBhIE1hZ2ljIHN1YmdhbWUgdW5kZXIgdGhlIHRhYmxlIHN0YXJ0aW5n
+        IGF0IDUgbGlmZSwgdXNpbmcgdGhlaXIgbGlicmFyaWVzIGFzIHRoZWlyIGRl
+        Y2tzLiBBZnRlciB0aGUgc3ViZ2FtZSBlbmRzLCB0aGUgd2lubmVyIHNlYXJj
+        aGVzIGhpcyBvciBoZXIgbGlicmFyeSBmb3IgdHdvIGNhcmRzLCBwdXRzIHRo
+        b3NlIGNhcmRzIGludG8gaGlzIG9yIGhlciBoYW5kLCB0aGVuIHNodWZmbGVz
+        IGhpcyBvciBoZXIgbGlicmFyeS4iLAogICAgImZvcm1hdHMiOiB7fSwKICAg
+        ICJlZGl0aW9ucyI6IFsKICAgICAgewogICAgICAgICJzZXQiOiAiVW5oaW5n
+        ZWQiLAogICAgICAgICJzZXRfaWQiOiAiVU5IIiwKICAgICAgICAicmFyaXR5
+        IjogInJhcmUiLAogICAgICAgICJhcnRpc3QiOiAiTHVjYSBab250aW5pIiwK
+        ICAgICAgICAibXVsdGl2ZXJzZV9pZCI6IDc0MzEyLAogICAgICAgICJudW1i
+        ZXIiOiAiNTMiLAogICAgICAgICJsYXlvdXQiOiAibm9ybWFsIiwKICAgICAg
+        ICAicHJpY2UiOiB7CiAgICAgICAgICAibG93IjogMCwKICAgICAgICAgICJt
+        ZWRpYW4iOiAwLAogICAgICAgICAgImhpZ2giOiAwCiAgICAgICAgfSwKICAg
+        ICAgICAidXJsIjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvY2Fy
+        ZHM/bXVsdGl2ZXJzZWlkPTc0MzEyIiwKICAgICAgICAiaW1hZ2VfdXJsIjog
+        Imh0dHBzOi8vaW1hZ2UuZGVja2JyZXcuY29tL210Zy9tdWx0aXZlcnNlaWQv
+        NzQzMTIuanBnIiwKICAgICAgICAic2V0X3VybCI6ICJodHRwczovL2FwaS5k
+        ZWNrYnJldy5jb20vbXRnL3NldHMvVU5IIiwKICAgICAgICAic3RvcmVfdXJs
+        IjogImh0dHA6Ly9zdG9yZS50Y2dwbGF5ZXIuY29tL21hZ2ljL3VuaGluZ2Vk
+        L2VudGVyLXRoZS1kdW5nZW9uP3BhcnRuZXI9REVDS0JSRVciCiAgICAgIH0K
+        ICAgIF0KICB9LAogIHsKICAgICJuYW1lIjogIkZhY2UgdG8gRmFjZSIsCiAg
+        ICAiaWQiOiAiZmFjZS10by1mYWNlIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9h
+        cGkuZGVja2JyZXcuY29tL210Zy9jYXJkcy9mYWNlLXRvLWZhY2UiLAogICAg
+        InN0b3JlX3VybCI6ICJodHRwOi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdp
+        Yy91bmhpbmdlZC9mYWNlLXRvLWZhY2U/cGFydG5lcj1ERUNLQlJFVyIsCiAg
+        ICAidHlwZXMiOiBbCiAgICAgICJzb3JjZXJ5IgogICAgXSwKICAgICJjb2xv
+        cnMiOiBbCiAgICAgICJyZWQiCiAgICBdLAogICAgImNtYyI6IDIsCiAgICAi
+        Y29zdCI6ICJ7MX17Un0iLAogICAgInRleHQiOiAiWW91IGFuZCB0YXJnZXQg
+        b3Bwb25lbnQgcGxheSBhIGJlc3QgdHdvLW91dC1vZi10aHJlZSBSb2NrLCBQ
+        YXBlciwgU2Npc3NvcnMgbWF0Y2guIElmIHlvdSB3aW4sIEZhY2UgdG8gRmFj
+        ZSBkZWFscyA1IGRhbWFnZSB0byB0aGF0IG9wcG9uZW50LiIsCiAgICAiZm9y
+        bWF0cyI6IHt9LAogICAgImVkaXRpb25zIjogWwogICAgICB7CiAgICAgICAg
+        InNldCI6ICJVbmhpbmdlZCIsCiAgICAgICAgInNldF9pZCI6ICJVTkgiLAog
+        ICAgICAgICJyYXJpdHkiOiAidW5jb21tb24iLAogICAgICAgICJhcnRpc3Qi
+        OiAiUmFuZHkgR2FsbGVnb3MiLAogICAgICAgICJtdWx0aXZlcnNlX2lkIjog
+        NzM5NjYsCiAgICAgICAgImZsYXZvciI6ICJCZWZ1ZGRsZWQgYnkgdGhpcyBu
+        ZXcgZ2FtZSwgQXJnZyBsb25nZWQgZm9yIHRoZSBkYXlzIG9mIFJvY2ssIFJv
+        Y2ssIFJvY2suIiwKICAgICAgICAibnVtYmVyIjogIjc2IiwKICAgICAgICAi
+        bGF5b3V0IjogIm5vcm1hbCIsCiAgICAgICAgInByaWNlIjogewogICAgICAg
+        ICAgImxvdyI6IDAsCiAgICAgICAgICAibWVkaWFuIjogMCwKICAgICAgICAg
+        ICJoaWdoIjogMAogICAgICAgIH0sCiAgICAgICAgInVybCI6ICJodHRwczov
+        L2FwaS5kZWNrYnJldy5jb20vbXRnL2NhcmRzP211bHRpdmVyc2VpZD03Mzk2
+        NiIsCiAgICAgICAgImltYWdlX3VybCI6ICJodHRwczovL2ltYWdlLmRlY2ti
+        cmV3LmNvbS9tdGcvbXVsdGl2ZXJzZWlkLzczOTY2LmpwZyIsCiAgICAgICAg
+        InNldF91cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcuY29tL210Zy9zZXRz
+        L1VOSCIsCiAgICAgICAgInN0b3JlX3VybCI6ICJodHRwOi8vc3RvcmUudGNn
+        cGxheWVyLmNvbS9tYWdpYy91bmhpbmdlZC9mYWNlLXRvLWZhY2U/cGFydG5l
+        cj1ERUNLQlJFVyIKICAgICAgfQogICAgXQogIH0sCiAgewogICAgIm5hbWUi
+        OiAiR3Jhbm55J3MgUGF5YmFjayIsCiAgICAiaWQiOiAiZ3Jhbm55cy1wYXli
+        YWNrIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcuY29tL210
+        Zy9jYXJkcy9ncmFubnlzLXBheWJhY2siLAogICAgInN0b3JlX3VybCI6ICJo
+        dHRwOi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdpYy9wcm9kdWN0L3Nob3c/
+        cGFydG5lcj1ERUNLQlJFV1x1MDAyNlByb2R1Y3ROYW1lPWdyYW5ueXMtcGF5
+        YmFjayIsCiAgICAidHlwZXMiOiBbCiAgICAgICJzb3JjZXJ5IgogICAgXSwK
+        ICAgICJjb2xvcnMiOiBbCiAgICAgICJncmVlbiIKICAgIF0sCiAgICAiY21j
+        IjogOCwKICAgICJjb3N0IjogIns3fXtHfSIsCiAgICAidGV4dCI6ICJZb3Ug
+        Z2FpbiBsaWZlIGVxdWFsIHRvIHlvdXIgYWdlLiIsCiAgICAiZm9ybWF0cyI6
+        IHt9LAogICAgImVkaXRpb25zIjogWwogICAgICB7CiAgICAgICAgInNldCI6
+        ICJVbmhpbmdlZCIsCiAgICAgICAgInNldF9pZCI6ICJVTkgiLAogICAgICAg
+        ICJyYXJpdHkiOiAidW5jb21tb24iLAogICAgICAgICJhcnRpc3QiOiAiSm9l
+        bCBUaG9tYXMiLAogICAgICAgICJtdWx0aXZlcnNlX2lkIjogNzQyODEsCiAg
+        ICAgICAgImZsYXZvciI6ICJSXHUwMDI2RCBDb21tZW50c1xuQkIgMTAvMTA6
+        IFdoeSBkb2VzIGEgbGlmZS1nYWluaW5nIGNhcmQgc2hvdyBhbiBvbGQgbGFk
+        eSBraWxsaW5nIHBlb3BsZT9cbk1SICgxMC8xMC8wMyk6IFdlJ2xsIGZpeCBp
+        dCBpbiB0aGUgZmxhdm9yIHRleHQuIiwKICAgICAgICAibnVtYmVyIjogIjk5
+        IiwKICAgICAgICAibGF5b3V0IjogIm5vcm1hbCIsCiAgICAgICAgInByaWNl
+        IjogewogICAgICAgICAgImxvdyI6IDAsCiAgICAgICAgICAibWVkaWFuIjog
+        MCwKICAgICAgICAgICJoaWdoIjogMAogICAgICAgIH0sCiAgICAgICAgInVy
+        bCI6ICJodHRwczovL2FwaS5kZWNrYnJldy5jb20vbXRnL2NhcmRzP211bHRp
+        dmVyc2VpZD03NDI4MSIsCiAgICAgICAgImltYWdlX3VybCI6ICJodHRwczov
+        L2ltYWdlLmRlY2ticmV3LmNvbS9tdGcvbXVsdGl2ZXJzZWlkLzc0MjgxLmpw
+        ZyIsCiAgICAgICAgInNldF91cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcu
+        Y29tL210Zy9zZXRzL1VOSCIsCiAgICAgICAgInN0b3JlX3VybCI6ICJodHRw
+        Oi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdpYy91bmhpbmdlZC9ncmFubnlz
+        LXBheWJhY2s/cGFydG5lcj1ERUNLQlJFVyIKICAgICAgfSwKICAgICAgewog
+        ICAgICAgICJzZXQiOiAiQXJlbmEgTGVhZ3VlIiwKICAgICAgICAic2V0X2lk
+        IjogInBBUkwiLAogICAgICAgICJyYXJpdHkiOiAic3BlY2lhbCIsCiAgICAg
+        ICAgImFydGlzdCI6ICJLYWphIEZvZ2xpbyIsCiAgICAgICAgIm11bHRpdmVy
+        c2VfaWQiOiAwLAogICAgICAgICJmbGF2b3IiOiAiRmV3IHJlbWVtYmVyIHRo
+        ZSBleHBsb2l0cyBvZiBEYWtrb24ncyBncmFuZG1vdGhlciwgRXVuaWNlIEJs
+        YWNrYmxhZGUuIiwKICAgICAgICAibnVtYmVyIjogIjY1IiwKICAgICAgICAi
+        bGF5b3V0IjogIm5vcm1hbCIsCiAgICAgICAgInByaWNlIjogewogICAgICAg
+        ICAgImxvdyI6IDAsCiAgICAgICAgICAibWVkaWFuIjogMCwKICAgICAgICAg
+        ICJoaWdoIjogMAogICAgICAgIH0sCiAgICAgICAgInVybCI6ICJodHRwczov
+        L2FwaS5kZWNrYnJldy5jb20vbXRnL2NhcmRzP211bHRpdmVyc2VpZD0wIiwK
+        ICAgICAgICAiaW1hZ2VfdXJsIjogImh0dHBzOi8vaW1hZ2UuZGVja2JyZXcu
+        Y29tL210Zy9tdWx0aXZlcnNlaWQvMC5qcGciLAogICAgICAgICJzZXRfdXJs
+        IjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvc2V0cy9wQVJMIiwK
+        ICAgICAgICAic3RvcmVfdXJsIjogImh0dHA6Ly9zdG9yZS50Y2dwbGF5ZXIu
+        Y29tL21hZ2ljL2FyZW5hLWxlYWd1ZS9ncmFubnlzLXBheWJhY2s/cGFydG5l
+        cj1ERUNLQlJFVyIKICAgICAgfQogICAgXQogIH0sCiAgewogICAgIm5hbWUi
+        OiAiTGFuZCBBaWQgJzA0IiwKICAgICJpZCI6ICJsYW5kLWFpZC0wNCIsCiAg
+        ICAidXJsIjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvY2FyZHMv
+        bGFuZC1haWQtMDQiLAogICAgInN0b3JlX3VybCI6ICJodHRwOi8vc3RvcmUu
+        dGNncGxheWVyLmNvbS9tYWdpYy91bmhpbmdlZC9sYW5kLWFpZC0wND9wYXJ0
+        bmVyPURFQ0tCUkVXIiwKICAgICJ0eXBlcyI6IFsKICAgICAgInNvcmNlcnki
+        CiAgICBdLAogICAgImNvbG9ycyI6IFsKICAgICAgImdyZWVuIgogICAgXSwK
+        ICAgICJjbWMiOiAyLAogICAgImNvc3QiOiAie0d9e0d9IiwKICAgICJ0ZXh0
+        IjogIlNlYXJjaCB5b3VyIGxpYnJhcnkgZm9yIGEgYmFzaWMgbGFuZCBjYXJk
+        LCBwdXQgdGhhdCBjYXJkIGludG8gcGxheSB0YXBwZWQsIHRoZW4gc2h1ZmZs
+        ZSB5b3VyIGxpYnJhcnkuIElmIHlvdSBzYW5nIGEgc29uZyB0aGUgd2hvbGUg
+        dGltZSB5b3Ugd2VyZSBzZWFyY2hpbmcgYW5kIHNodWZmbGluZywgeW91IG1h
+        eSB1bnRhcCB0aGF0IGxhbmQuIiwKICAgICJmb3JtYXRzIjoge30sCiAgICAi
+        ZWRpdGlvbnMiOiBbCiAgICAgIHsKICAgICAgICAic2V0IjogIlVuaGluZ2Vk
+        IiwKICAgICAgICAic2V0X2lkIjogIlVOSCIsCiAgICAgICAgInJhcml0eSI6
+        ICJjb21tb24iLAogICAgICAgICJhcnRpc3QiOiAiSmltIE5lbHNvbiIsCiAg
+        ICAgICAgIm11bHRpdmVyc2VfaWQiOiA3NDI1OSwKICAgICAgICAibnVtYmVy
+        IjogIjEwMiIsCiAgICAgICAgImxheW91dCI6ICJub3JtYWwiLAogICAgICAg
+        ICJwcmljZSI6IHsKICAgICAgICAgICJsb3ciOiAwLAogICAgICAgICAgIm1l
+        ZGlhbiI6IDAsCiAgICAgICAgICAiaGlnaCI6IDAKICAgICAgICB9LAogICAg
+        ICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcuY29tL210Zy9jYXJk
+        cz9tdWx0aXZlcnNlaWQ9NzQyNTkiLAogICAgICAgICJpbWFnZV91cmwiOiAi
+        aHR0cHM6Ly9pbWFnZS5kZWNrYnJldy5jb20vbXRnL211bHRpdmVyc2VpZC83
+        NDI1OS5qcGciLAogICAgICAgICJzZXRfdXJsIjogImh0dHBzOi8vYXBpLmRl
+        Y2ticmV3LmNvbS9tdGcvc2V0cy9VTkgiLAogICAgICAgICJzdG9yZV91cmwi
+        OiAiaHR0cDovL3N0b3JlLnRjZ3BsYXllci5jb20vbWFnaWMvdW5oaW5nZWQv
+        bGFuZC1haWQtMDQ/cGFydG5lcj1ERUNLQlJFVyIKICAgICAgfQogICAgXQog
+        IH0sCiAgewogICAgIm5hbWUiOiAiTW91dGggdG8gTW91dGgiLAogICAgImlk
+        IjogIm1vdXRoLXRvLW1vdXRoIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGku
+        ZGVja2JyZXcuY29tL210Zy9jYXJkcy9tb3V0aC10by1tb3V0aCIsCiAgICAi
+        c3RvcmVfdXJsIjogImh0dHA6Ly9zdG9yZS50Y2dwbGF5ZXIuY29tL21hZ2lj
+        L3VuaGluZ2VkL21vdXRoLXRvLW1vdXRoP3BhcnRuZXI9REVDS0JSRVciLAog
+        ICAgInR5cGVzIjogWwogICAgICAic29yY2VyeSIKICAgIF0sCiAgICAiY29s
+        b3JzIjogWwogICAgICAiYmx1ZSIKICAgIF0sCiAgICAiY21jIjogNCwKICAg
+        ICJjb3N0IjogInszfXtVfSIsCiAgICAidGV4dCI6ICJZb3UgYW5kIHRhcmdl
+        dCBvcHBvbmVudCBoYXZlIGEgYnJlYXRoLWhvbGRpbmcgY29udGVzdC4gSWYg
+        eW91IHdpbiwgeW91IGdhaW4gY29udHJvbCBvZiB0YXJnZXQgY3JlYXR1cmUg
+        dGhhdCBwbGF5ZXIgY29udHJvbHMuIiwKICAgICJmb3JtYXRzIjoge30sCiAg
+        ICAiZWRpdGlvbnMiOiBbCiAgICAgIHsKICAgICAgICAic2V0IjogIlVuaGlu
+        Z2VkIiwKICAgICAgICAic2V0X2lkIjogIlVOSCIsCiAgICAgICAgInJhcml0
+        eSI6ICJ1bmNvbW1vbiIsCiAgICAgICAgImFydGlzdCI6ICJBbGFuIFBvbGxh
+        Y2siLAogICAgICAgICJtdWx0aXZlcnNlX2lkIjogNzM5NDksCiAgICAgICAg
+        ImZsYXZvciI6ICJJbnRlcmVzdGluZyB0aWRiaXQ6IFN1cnZleXMgc2hvdyB0
+        aGF0IHRoZSBjYXJkIE93IGhhcyBvbmUgb2YgdGhlIG1vc3QgcG9wdWxhciBw
+        aWVjZXMgb2YgZmxhdm9yIHRleHQgaW4gdGhlIFVuZ2x1ZWQgZXhwYW5zaW9u
+        LiIsCiAgICAgICAgIm51bWJlciI6ICI0MCIsCiAgICAgICAgImxheW91dCI6
+        ICJub3JtYWwiLAogICAgICAgICJwcmljZSI6IHsKICAgICAgICAgICJsb3ci
+        OiAwLAogICAgICAgICAgIm1lZGlhbiI6IDAsCiAgICAgICAgICAiaGlnaCI6
+        IDAKICAgICAgICB9LAogICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGkuZGVj
+        a2JyZXcuY29tL210Zy9jYXJkcz9tdWx0aXZlcnNlaWQ9NzM5NDkiLAogICAg
+        ICAgICJpbWFnZV91cmwiOiAiaHR0cHM6Ly9pbWFnZS5kZWNrYnJldy5jb20v
+        bXRnL211bHRpdmVyc2VpZC83Mzk0OS5qcGciLAogICAgICAgICJzZXRfdXJs
+        IjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvc2V0cy9VTkgiLAog
+        ICAgICAgICJzdG9yZV91cmwiOiAiaHR0cDovL3N0b3JlLnRjZ3BsYXllci5j
+        b20vbWFnaWMvdW5oaW5nZWQvbW91dGgtdG8tbW91dGg/cGFydG5lcj1ERUNL
+        QlJFVyIKICAgICAgfQogICAgXQogIH0sCiAgewogICAgIm5hbWUiOiAiUGVy
+        c2VjdXRlIEFydGlzdCIsCiAgICAiaWQiOiAicGVyc2VjdXRlLWFydGlzdCIs
+        CiAgICAidXJsIjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvY2Fy
+        ZHMvcGVyc2VjdXRlLWFydGlzdCIsCiAgICAic3RvcmVfdXJsIjogImh0dHA6
+        Ly9zdG9yZS50Y2dwbGF5ZXIuY29tL21hZ2ljL3VuaGluZ2VkL3BlcnNlY3V0
+        ZS1hcnRpc3Q/cGFydG5lcj1ERUNLQlJFVyIsCiAgICAidHlwZXMiOiBbCiAg
+        ICAgICJzb3JjZXJ5IgogICAgXSwKICAgICJjb2xvcnMiOiBbCiAgICAgICJi
+        bGFjayIKICAgIF0sCiAgICAiY21jIjogMywKICAgICJjb3N0IjogInsxfXtC
+        fXtCfSIsCiAgICAidGV4dCI6ICJDaG9vc2UgYW4gYXJ0aXN0IG90aGVyIHRo
+        YW4gUmViZWNjYSBHdWF5LiBUYXJnZXQgcGxheWVyIHJldmVhbHMgaGlzIG9y
+        IGhlciBoYW5kIGFuZCBkaXNjYXJkcyBhbGwgbm9ubGFuZCBjYXJkcyBieSB0
+        aGUgY2hvc2VuIGFydGlzdC4iLAogICAgImZvcm1hdHMiOiB7fSwKICAgICJl
+        ZGl0aW9ucyI6IFsKICAgICAgewogICAgICAgICJzZXQiOiAiVW5oaW5nZWQi
+        LAogICAgICAgICJzZXRfaWQiOiAiVU5IIiwKICAgICAgICAicmFyaXR5Ijog
+        InVuY29tbW9uIiwKICAgICAgICAiYXJ0aXN0IjogIlJlYmVjY2Eg4oCcRG9u
+        J3QgTWVzcyB3aXRoIE1l4oCdIEd1YXkiLAogICAgICAgICJtdWx0aXZlcnNl
+        X2lkIjogNzQyMzgsCiAgICAgICAgImZsYXZvciI6ICJUaGUgdG9yY2hlcyBh
+        bmQgcGl0Y2hmb3JrcyB3ZXJlIG5vIG1hdGNoIGZvciBSZWJlY2NhJ3MgZmFu
+        cy4iLAogICAgICAgICJudW1iZXIiOiAiNjEiLAogICAgICAgICJsYXlvdXQi
+        OiAibm9ybWFsIiwKICAgICAgICAicHJpY2UiOiB7CiAgICAgICAgICAibG93
+        IjogMCwKICAgICAgICAgICJtZWRpYW4iOiAwLAogICAgICAgICAgImhpZ2gi
+        OiAwCiAgICAgICAgfSwKICAgICAgICAidXJsIjogImh0dHBzOi8vYXBpLmRl
+        Y2ticmV3LmNvbS9tdGcvY2FyZHM/bXVsdGl2ZXJzZWlkPTc0MjM4IiwKICAg
+        ICAgICAiaW1hZ2VfdXJsIjogImh0dHBzOi8vaW1hZ2UuZGVja2JyZXcuY29t
+        L210Zy9tdWx0aXZlcnNlaWQvNzQyMzguanBnIiwKICAgICAgICAic2V0X3Vy
+        bCI6ICJodHRwczovL2FwaS5kZWNrYnJldy5jb20vbXRnL3NldHMvVU5IIiwK
+        ICAgICAgICAic3RvcmVfdXJsIjogImh0dHA6Ly9zdG9yZS50Y2dwbGF5ZXIu
+        Y29tL21hZ2ljL3VuaGluZ2VkL3BlcnNlY3V0ZS1hcnRpc3Q/cGFydG5lcj1E
+        RUNLQlJFVyIKICAgICAgfQogICAgXQogIH0sCiAgewogICAgIm5hbWUiOiAi
+        UmFyZS1CLUdvbmUiLAogICAgImlkIjogInJhcmUtYi1nb25lIiwKICAgICJ1
+        cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcuY29tL210Zy9jYXJkcy9yYXJl
+        LWItZ29uZSIsCiAgICAic3RvcmVfdXJsIjogImh0dHA6Ly9zdG9yZS50Y2dw
+        bGF5ZXIuY29tL21hZ2ljL3VuaGluZ2VkL3JhcmUtYi1nb25lP3BhcnRuZXI9
+        REVDS0JSRVciLAogICAgInR5cGVzIjogWwogICAgICAic29yY2VyeSIKICAg
+        IF0sCiAgICAiY29sb3JzIjogWwogICAgICAiYmxhY2siLAogICAgICAicmVk
+        IgogICAgXSwKICAgICJjbWMiOiA0LAogICAgImNvc3QiOiAiezJ9e0J9e1J9
+        IiwKICAgICJ0ZXh0IjogIkVhY2ggcGxheWVyIHNhY3JpZmljZXMgYWxsIHJh
+        cmUgcGVybWFuZW50cywgdGhlbiByZXZlYWxzIGhpcyBvciBoZXIgaGFuZCBh
+        bmQgZGlzY2FyZHMgYWxsIHJhcmUgY2FyZHMuIiwKICAgICJmb3JtYXRzIjog
+        e30sCiAgICAiZWRpdGlvbnMiOiBbCiAgICAgIHsKICAgICAgICAic2V0Ijog
+        IlVuaGluZ2VkIiwKICAgICAgICAic2V0X2lkIjogIlVOSCIsCiAgICAgICAg
+        InJhcml0eSI6ICJyYXJlIiwKICAgICAgICAiYXJ0aXN0IjogIkpvaG4gTWF0
+        c29uIiwKICAgICAgICAibXVsdGl2ZXJzZV9pZCI6IDczOTY4LAogICAgICAg
+        ICJmbGF2b3IiOiAiVGhlIG9ubHkgcmFyZSB5b3UnbGwgZXZlciBuZWVkLiBP
+        a2F5LCBub3QgcmVhbGx5LiIsCiAgICAgICAgIm51bWJlciI6ICIxMTkiLAog
+        ICAgICAgICJsYXlvdXQiOiAibm9ybWFsIiwKICAgICAgICAicHJpY2UiOiB7
+        CiAgICAgICAgICAibG93IjogMCwKICAgICAgICAgICJtZWRpYW4iOiAwLAog
+        ICAgICAgICAgImhpZ2giOiAwCiAgICAgICAgfSwKICAgICAgICAidXJsIjog
+        Imh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvY2FyZHM/bXVsdGl2ZXJz
+        ZWlkPTczOTY4IiwKICAgICAgICAiaW1hZ2VfdXJsIjogImh0dHBzOi8vaW1h
+        Z2UuZGVja2JyZXcuY29tL210Zy9tdWx0aXZlcnNlaWQvNzM5NjguanBnIiwK
+        ICAgICAgICAic2V0X3VybCI6ICJodHRwczovL2FwaS5kZWNrYnJldy5jb20v
+        bXRnL3NldHMvVU5IIiwKICAgICAgICAic3RvcmVfdXJsIjogImh0dHA6Ly9z
+        dG9yZS50Y2dwbGF5ZXIuY29tL21hZ2ljL3VuaGluZ2VkL3JhcmUtYi1nb25l
+        P3BhcnRuZXI9REVDS0JSRVciCiAgICAgIH0KICAgIF0KICB9LAogIHsKICAg
+        ICJuYW1lIjogIlN5bWJvbCBTdGF0dXMiLAogICAgImlkIjogInN5bWJvbC1z
+        dGF0dXMiLAogICAgInVybCI6ICJodHRwczovL2FwaS5kZWNrYnJldy5jb20v
+        bXRnL2NhcmRzL3N5bWJvbC1zdGF0dXMiLAogICAgInN0b3JlX3VybCI6ICJo
+        dHRwOi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdpYy91bmhpbmdlZC9zeW1i
+        b2wtc3RhdHVzP3BhcnRuZXI9REVDS0JSRVciLAogICAgInR5cGVzIjogWwog
+        ICAgICAic29yY2VyeSIKICAgIF0sCiAgICAiY29sb3JzIjogWwogICAgICAi
+        Z3JlZW4iCiAgICBdLAogICAgImNtYyI6IDQsCiAgICAiY29zdCI6ICJ7Mn17
+        R317R30iLAogICAgInRleHQiOiAiUHV0IGEgMS8xIGNvbG9ybGVzcyBFeHBh
+        bnNpb24tU3ltYm9sIGNyZWF0dXJlIHRva2VuIGludG8gcGxheSBmb3IgZWFj
+        aCBkaWZmZXJlbnQgZXhwYW5zaW9uIHN5bWJvbCBhbW9uZyBwZXJtYW5lbnRz
+        IHlvdSBjb250cm9sLiIsCiAgICAiZm9ybWF0cyI6IHt9LAogICAgImVkaXRp
+        b25zIjogWwogICAgICB7CiAgICAgICAgInNldCI6ICJVbmhpbmdlZCIsCiAg
+        ICAgICAgInNldF9pZCI6ICJVTkgiLAogICAgICAgICJyYXJpdHkiOiAidW5j
+        b21tb24iLAogICAgICAgICJhcnRpc3QiOiAiTGl6IERhbmZvcnRoIiwKICAg
+        ICAgICAibXVsdGl2ZXJzZV9pZCI6IDc0MjY1LAogICAgICAgICJmbGF2b3Ii
+        OiAiXCJFdmVyeW9uZSBicmVhayBpbnRvIHRlYW1zLiBXZWFwb25yeSwgeW91
+        J3JlIHdpdGggbWUuIE5hdHVyZSBncm91cCwgbWVldCBieSB0aGUgcGFsbSB0
+        cmVlLiBTdG9uZXdvcmtzIGFuZCBtZXRhbHdvcmtzLCBmb2xsb3cgdGhlIGFu
+        dmlsLiBFdmVyeW9uZSBlbHNlLCBnYXRoZXIgYXJvdW5kIHRoZSBnaWFudCBW
+        LlwiXG7igJRTd29yZCBvZiBLYWxkcmEiLAogICAgICAgICJudW1iZXIiOiAi
+        MTE0IiwKICAgICAgICAibGF5b3V0IjogIm5vcm1hbCIsCiAgICAgICAgInBy
+        aWNlIjogewogICAgICAgICAgImxvdyI6IDAsCiAgICAgICAgICAibWVkaWFu
+        IjogMCwKICAgICAgICAgICJoaWdoIjogMAogICAgICAgIH0sCiAgICAgICAg
+        InVybCI6ICJodHRwczovL2FwaS5kZWNrYnJldy5jb20vbXRnL2NhcmRzP211
+        bHRpdmVyc2VpZD03NDI2NSIsCiAgICAgICAgImltYWdlX3VybCI6ICJodHRw
+        czovL2ltYWdlLmRlY2ticmV3LmNvbS9tdGcvbXVsdGl2ZXJzZWlkLzc0MjY1
+        LmpwZyIsCiAgICAgICAgInNldF91cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2Jy
+        ZXcuY29tL210Zy9zZXRzL1VOSCIsCiAgICAgICAgInN0b3JlX3VybCI6ICJo
+        dHRwOi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdpYy91bmhpbmdlZC9zeW1i
+        b2wtc3RhdHVzP3BhcnRuZXI9REVDS0JSRVciCiAgICAgIH0KICAgIF0KICB9
+        LAogIHsKICAgICJuYW1lIjogIlRvdWNoIGFuZCBHbyIsCiAgICAiaWQiOiAi
+        dG91Y2gtYW5kLWdvIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2Jy
+        ZXcuY29tL210Zy9jYXJkcy90b3VjaC1hbmQtZ28iLAogICAgInN0b3JlX3Vy
+        bCI6ICJodHRwOi8vc3RvcmUudGNncGxheWVyLmNvbS9tYWdpYy91bmhpbmdl
+        ZC90b3VjaC1hbmQtZ28/cGFydG5lcj1ERUNLQlJFVyIsCiAgICAidHlwZXMi
+        OiBbCiAgICAgICJzb3JjZXJ5IgogICAgXSwKICAgICJjb2xvcnMiOiBbCiAg
+        ICAgICJyZWQiCiAgICBdLAogICAgImNtYyI6IDQsCiAgICAiY29zdCI6ICJ7
+        M317Un0iLAogICAgInRleHQiOiAiRGVzdHJveSB0YXJnZXQgbGFuZC5cbkdv
+        dGNoYSBXaGVuZXZlciBhbiBvcHBvbmVudCB0b3VjaGVzIGhpcyBvciBoZXIg
+        ZmFjZSwgeW91IG1heSBzYXkgXCJHb3RjaGFcIiBJZiB5b3UgZG8sIHJldHVy
+        biBUb3VjaCBhbmQgR28gZnJvbSB5b3VyIGdyYXZleWFyZCB0byB5b3VyIGhh
+        bmQuIiwKICAgICJmb3JtYXRzIjoge30sCiAgICAiZWRpdGlvbnMiOiBbCiAg
+        ICAgIHsKICAgICAgICAic2V0IjogIlVuaGluZ2VkIiwKICAgICAgICAic2V0
+        X2lkIjogIlVOSCIsCiAgICAgICAgInJhcml0eSI6ICJjb21tb24iLAogICAg
+        ICAgICJhcnRpc3QiOiAiQmVuIFRob21wc29uIiwKICAgICAgICAibXVsdGl2
+        ZXJzZV9pZCI6IDc0MzQ5LAogICAgICAgICJmbGF2b3IiOiAiSnVkZ2UncyBy
+        dWxpbmc6IFRoZSBpbnRlcmlvciBvZiB0aGUgZmFjZSBzdGlsbCBjb3VudHMg
+        YXMgdGhlIGZhY2UsIHNvIGEgbm9zZS1waWNrIGlzIGxlZ2l0aW1hdGUgZ3Jv
+        dW5kcyBmb3Igc2F5aW5nIFwiR290Y2hhXCIiLAogICAgICAgICJudW1iZXIi
+        OiAiOTAiLAogICAgICAgICJsYXlvdXQiOiAibm9ybWFsIiwKICAgICAgICAi
+        cHJpY2UiOiB7CiAgICAgICAgICAibG93IjogMCwKICAgICAgICAgICJtZWRp
+        YW4iOiAwLAogICAgICAgICAgImhpZ2giOiAwCiAgICAgICAgfSwKICAgICAg
+        ICAidXJsIjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvY2FyZHM/
+        bXVsdGl2ZXJzZWlkPTc0MzQ5IiwKICAgICAgICAiaW1hZ2VfdXJsIjogImh0
+        dHBzOi8vaW1hZ2UuZGVja2JyZXcuY29tL210Zy9tdWx0aXZlcnNlaWQvNzQz
+        NDkuanBnIiwKICAgICAgICAic2V0X3VybCI6ICJodHRwczovL2FwaS5kZWNr
+        YnJldy5jb20vbXRnL3NldHMvVU5IIiwKICAgICAgICAic3RvcmVfdXJsIjog
+        Imh0dHA6Ly9zdG9yZS50Y2dwbGF5ZXIuY29tL21hZ2ljL3VuaGluZ2VkL3Rv
+        dWNoLWFuZC1nbz9wYXJ0bmVyPURFQ0tCUkVXIgogICAgICB9CiAgICBdCiAg
+        fSwKICB7CiAgICAibmFtZSI6ICJXZXQgV2lsbGllIG9mIHRoZSBEYW1uZWQi
+        LAogICAgImlkIjogIndldC13aWxsaWUtb2YtdGhlLWRhbW5lZCIsCiAgICAi
+        dXJsIjogImh0dHBzOi8vYXBpLmRlY2ticmV3LmNvbS9tdGcvY2FyZHMvd2V0
+        LXdpbGxpZS1vZi10aGUtZGFtbmVkIiwKICAgICJzdG9yZV91cmwiOiAiaHR0
+        cDovL3N0b3JlLnRjZ3BsYXllci5jb20vbWFnaWMvdW5oaW5nZWQvd2V0LXdp
+        bGxpZS1vZi10aGUtZGFtbmVkP3BhcnRuZXI9REVDS0JSRVciLAogICAgInR5
+        cGVzIjogWwogICAgICAic29yY2VyeSIKICAgIF0sCiAgICAiY29sb3JzIjog
+        WwogICAgICAiYmxhY2siCiAgICBdLAogICAgImNtYyI6IDQsCiAgICAiY29z
+        dCI6ICJ7Mn17Qn17Qn0iLAogICAgInRleHQiOiAiV2V0IFdpbGxpZSBvZiB0
+        aGUgRGFtbmVkIGRlYWxzIDLCvSBkYW1hZ2UgdG8gdGFyZ2V0IGNyZWF0dXJl
+        IG9yIHBsYXllciBhbmQgeW91IGdhaW4gMsK9IGxpZmUuIiwKICAgICJmb3Jt
+        YXRzIjoge30sCiAgICAiZWRpdGlvbnMiOiBbCiAgICAgIHsKICAgICAgICAi
+        c2V0IjogIlVuaGluZ2VkIiwKICAgICAgICAic2V0X2lkIjogIlVOSCIsCiAg
+        ICAgICAgInJhcml0eSI6ICJjb21tb24iLAogICAgICAgICJhcnRpc3QiOiAi
+        R3JlZyBTdGFwbGVzIiwKICAgICAgICAibXVsdGl2ZXJzZV9pZCI6IDc0MjE5
+        LAogICAgICAgICJmbGF2b3IiOiAiRXZlciB0aGUgd2FycmlvciwgR2xpc3Nh
+        IHJlc3BvbmRlZCB3aXRoIGEgXCJ3ZWRnaWUgZnJvbSBiZXlvbmQgVXJhbnVz
+        LlwiIiwKICAgICAgICAibnVtYmVyIjogIjY2IiwKICAgICAgICAibGF5b3V0
+        IjogIm5vcm1hbCIsCiAgICAgICAgInByaWNlIjogewogICAgICAgICAgImxv
+        dyI6IDAsCiAgICAgICAgICAibWVkaWFuIjogMCwKICAgICAgICAgICJoaWdo
+        IjogMAogICAgICAgIH0sCiAgICAgICAgInVybCI6ICJodHRwczovL2FwaS5k
+        ZWNrYnJldy5jb20vbXRnL2NhcmRzP211bHRpdmVyc2VpZD03NDIxOSIsCiAg
+        ICAgICAgImltYWdlX3VybCI6ICJodHRwczovL2ltYWdlLmRlY2ticmV3LmNv
+        bS9tdGcvbXVsdGl2ZXJzZWlkLzc0MjE5LmpwZyIsCiAgICAgICAgInNldF91
+        cmwiOiAiaHR0cHM6Ly9hcGkuZGVja2JyZXcuY29tL210Zy9zZXRzL1VOSCIs
+        CiAgICAgICAgInN0b3JlX3VybCI6ICJodHRwOi8vc3RvcmUudGNncGxheWVy
+        LmNvbS9tYWdpYy91bmhpbmdlZC93ZXQtd2lsbGllLW9mLXRoZS1kYW1uZWQ/
+        cGFydG5lcj1ERUNLQlJFVyIKICAgICAgfQogICAgXQogIH0KXQ==
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 22:42:27 GMT
+- request:
+    method: get
+    uri: https://api.deckbrew.com/mtg/cards?color=blue&set=UNH&type=sorcery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 10 Nov 2015 22:50:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1167'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0e23da432848c07adf8f4249c339e6721447195841; expires=Wed, 09-Nov-16
+        22:50:41 GMT; path=/; domain=.deckbrew.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - link,content-length
+      Cache-Control:
+      - public,max-age=3600
+      Disclaimer:
+      - This API is not produced, endorsed, supported, or affiliated with Wizards
+        of the Coast.
+      License:
+      - 'The textual information presented through this API about Magic: The Gathering
+        is copyrighted by Wizards of the Coast.'
+      Link:
+      - <https://api.deckbrew.com/mtg/cards?color=red&color=blue&page=1&set=UNH&type=sorcery>;
+        rel="next"
+      Pricing:
+      - store.tcgplayer.com allows you to buy cards from any of our vendors, all at
+        the same time, in a simple checkout experience. Shop, Compare & Save with
+        TCGplayer.com!
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 vegur
+      Cf-Ray:
+      - 24355159a9fa0ef1-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "name": "Face to Face",
+            "id": "face-to-face",
+            "url": "https://api.deckbrew.com/mtg/cards/face-to-face",
+            "store_url": "http://store.tcgplayer.com/magic/unhinged/face-to-face?partner=DECKBREW",
+            "types": [
+              "sorcery"
+            ],
+            "colors": [
+              "red"
+            ],
+            "cmc": 2,
+            "cost": "{1}{R}",
+            "text": "You and target opponent play a best two-out-of-three Rock, Paper, Scissors match. If you win, Face to Face deals 5 damage to that opponent.",
+            "formats": {},
+            "editions": [
+              {
+                "set": "Unhinged",
+                "set_id": "UNH",
+                "rarity": "uncommon",
+                "artist": "Randy Gallegos",
+                "multiverse_id": 73966,
+                "flavor": "Befuddled by this new game, Argg longed for the days of Rock, Rock, Rock.",
+                "number": "76",
+                "layout": "normal",
+                "price": {
+                  "low": 0,
+                  "median": 0,
+                  "high": 0
+                },
+                "url": "https://api.deckbrew.com/mtg/cards?multiverseid=73966",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/73966.jpg",
+                "set_url": "https://api.deckbrew.com/mtg/sets/UNH",
+                "store_url": "http://store.tcgplayer.com/magic/unhinged/face-to-face?partner=DECKBREW"
+              }
+            ]
+          },
+          {
+            "name": "Mouth to Mouth",
+            "id": "mouth-to-mouth",
+            "url": "https://api.deckbrew.com/mtg/cards/mouth-to-mouth",
+            "store_url": "http://store.tcgplayer.com/magic/unhinged/mouth-to-mouth?partner=DECKBREW",
+            "types": [
+              "sorcery"
+            ],
+            "colors": [
+              "blue"
+            ],
+            "cmc": 4,
+            "cost": "{3}{U}",
+            "text": "You and target opponent have a breath-holding contest. If you win, you gain control of target creature that player controls.",
+            "formats": {},
+            "editions": [
+              {
+                "set": "Unhinged",
+                "set_id": "UNH",
+                "rarity": "uncommon",
+                "artist": "Alan Pollack",
+                "multiverse_id": 73949,
+                "flavor": "Interesting tidbit: Surveys show that the card Ow has one of the most popular pieces of flavor text in the Unglued expansion.",
+                "number": "40",
+                "layout": "normal",
+                "price": {
+                  "low": 0,
+                  "median": 0,
+                  "high": 0
+                },
+                "url": "https://api.deckbrew.com/mtg/cards?multiverseid=73949",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/73949.jpg",
+                "set_url": "https://api.deckbrew.com/mtg/sets/UNH",
+                "store_url": "http://store.tcgplayer.com/magic/unhinged/mouth-to-mouth?partner=DECKBREW"
+              }
+            ]
+          },
+          {
+            "name": "Rare-B-Gone",
+            "id": "rare-b-gone",
+            "url": "https://api.deckbrew.com/mtg/cards/rare-b-gone",
+            "store_url": "http://store.tcgplayer.com/magic/unhinged/rare-b-gone?partner=DECKBREW",
+            "types": [
+              "sorcery"
+            ],
+            "colors": [
+              "black",
+              "red"
+            ],
+            "cmc": 4,
+            "cost": "{2}{B}{R}",
+            "text": "Each player sacrifices all rare permanents, then reveals his or her hand and discards all rare cards.",
+            "formats": {},
+            "editions": [
+              {
+                "set": "Unhinged",
+                "set_id": "UNH",
+                "rarity": "rare",
+                "artist": "John Matson",
+                "multiverse_id": 73968,
+                "flavor": "The only rare you'll ever need. Okay, not really.",
+                "number": "119",
+                "layout": "normal",
+                "price": {
+                  "low": 0,
+                  "median": 0,
+                  "high": 0
+                },
+                "url": "https://api.deckbrew.com/mtg/cards?multiverseid=73968",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/73968.jpg",
+                "set_url": "https://api.deckbrew.com/mtg/sets/UNH",
+                "store_url": "http://store.tcgplayer.com/magic/unhinged/rare-b-gone?partner=DECKBREW"
+              }
+            ]
+          },
+          {
+            "name": "Touch and Go",
+            "id": "touch-and-go",
+            "url": "https://api.deckbrew.com/mtg/cards/touch-and-go",
+            "store_url": "http://store.tcgplayer.com/magic/unhinged/touch-and-go?partner=DECKBREW",
+            "types": [
+              "sorcery"
+            ],
+            "colors": [
+              "red"
+            ],
+            "cmc": 4,
+            "cost": "{3}{R}",
+            "text": "Destroy target land.\nGotcha Whenever an opponent touches his or her face, you may say \"Gotcha\" If you do, return Touch and Go from your graveyard to your hand.",
+            "formats": {},
+            "editions": [
+              {
+                "set": "Unhinged",
+                "set_id": "UNH",
+                "rarity": "common",
+                "artist": "Ben Thompson",
+                "multiverse_id": 74349,
+                "flavor": "Judge's ruling: The interior of the face still counts as the face, so a nose-pick is legitimate grounds for saying \"Gotcha\"",
+                "number": "90",
+                "layout": "normal",
+                "price": {
+                  "low": 0,
+                  "median": 0,
+                  "high": 0
+                },
+                "url": "https://api.deckbrew.com/mtg/cards?multiverseid=74349",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/74349.jpg",
+                "set_url": "https://api.deckbrew.com/mtg/sets/UNH",
+                "store_url": "http://store.tcgplayer.com/magic/unhinged/touch-and-go?partner=DECKBREW"
+              }
+            ]
+          }
+        ]
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 22:50:41 GMT
+recorded_with: VCR 3.0.0

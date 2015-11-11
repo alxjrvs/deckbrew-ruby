@@ -1,0 +1,350 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deckbrew.com/mtg/cards/193867
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 10 Nov 2015 22:07:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '62'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8298d9144daa2b512864fe51f105017a1447193270; expires=Wed, 09-Nov-16
+        22:07:50 GMT; path=/; domain=.deckbrew.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - link,content-length
+      Cache-Control:
+      - public,max-age=3600
+      Disclaimer:
+      - This API is not produced, endorsed, supported, or affiliated with Wizards
+        of the Coast.
+      License:
+      - 'The textual information presented through this API about Magic: The Gathering
+        is copyrighted by Wizards of the Coast.'
+      Pricing:
+      - store.tcgplayer.com allows you to buy cards from any of our vendors, all at
+        the same time, in a simple checkout experience. Shop, Compare & Save with
+        TCGplayer.com!
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 vegur
+      Cf-Ray:
+      - 24351294c1b51888-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "errors": [
+            "Card not found"
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 22:07:50 GMT
+- request:
+    method: get
+    uri: https://api.deckbrew.com/mtg/cards/demonic-tutor
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Tue, 10 Nov 2015 22:14:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1081'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0fd143ed25b1c3c393d20c8085fd06d11447193696; expires=Wed, 09-Nov-16
+        22:14:56 GMT; path=/; domain=.deckbrew.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - link,content-length
+      Cache-Control:
+      - public,max-age=3600
+      Disclaimer:
+      - This API is not produced, endorsed, supported, or affiliated with Wizards
+        of the Coast.
+      License:
+      - 'The textual information presented through this API about Magic: The Gathering
+        is copyrighted by Wizards of the Coast.'
+      Pricing:
+      - store.tcgplayer.com allows you to buy cards from any of our vendors, all at
+        the same time, in a simple checkout experience. Shop, Compare & Save with
+        TCGplayer.com!
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 vegur
+      Cf-Ray:
+      - 24351cf9c5c421da-EWR
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "name": "Demonic Tutor",
+          "id": "demonic-tutor",
+          "url": "https://api.deckbrew.com/mtg/cards/demonic-tutor",
+          "store_url": "http://store.tcgplayer.com/magic/product/show?partner=DECKBREW\u0026ProductName=demonic-tutor",
+          "types": [
+            "sorcery"
+          ],
+          "colors": [
+            "black"
+          ],
+          "cmc": 2,
+          "cost": "{1}{B}",
+          "text": "Search your library for a card and put that card into your hand. Then shuffle your library.",
+          "formats": {
+            "commander": "legal",
+            "legacy": "banned",
+            "vintage": "restricted"
+          },
+          "editions": [
+            {
+              "set": "Judge Gift Program",
+              "set_id": "pJGP",
+              "rarity": "special",
+              "artist": "Daarken",
+              "multiverse_id": 0,
+              "number": "35",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=0",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/0.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/pJGP",
+              "store_url": "http://store.tcgplayer.com/magic/judge-gift-program/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Vintage Masters",
+              "set_id": "VMA",
+              "rarity": "mythic",
+              "artist": "Scott Chou",
+              "multiverse_id": 382914,
+              "number": "116",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=382914",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/382914.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/VMA",
+              "store_url": "http://store.tcgplayer.com/magic/vintage-masters/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "International Collector's Edition",
+              "set_id": "CEI",
+              "rarity": "uncommon",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 0,
+              "number": "",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=0",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/0.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/CEI",
+              "store_url": "http://store.tcgplayer.com/magic/international-collectors-edition/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Collector's Edition",
+              "set_id": "CED",
+              "rarity": "uncommon",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 0,
+              "number": "",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=0",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/0.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/CED",
+              "store_url": "http://store.tcgplayer.com/magic/collectors-edition/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Duel Decks Anthology, Divine vs. Demonic",
+              "set_id": "DD3_DVD",
+              "rarity": "uncommon",
+              "artist": "Scott Chou",
+              "multiverse_id": 394025,
+              "flavor": "Liliana learned the secrets she sought, but at a price that was etched on her fate.",
+              "number": "49",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=394025",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/394025.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/DD3_DVD",
+              "store_url": "http://store.tcgplayer.com/magic/duel-decks-anthology-divine-vs-demonic/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Duel Decks: Divine vs. Demonic",
+              "set_id": "DDC",
+              "rarity": "uncommon",
+              "artist": "Scott Chou",
+              "multiverse_id": 193867,
+              "flavor": "Liliana learned the secrets she sought, but at a price that was etched on her fate.",
+              "number": "49",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=193867",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/193867.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/DDC",
+              "store_url": "http://store.tcgplayer.com/magic/duel-decks-divine-vs-demonic/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Limited Edition Beta",
+              "set_id": "LEB",
+              "rarity": "uncommon",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 355,
+              "number": "",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=355",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/355.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/LEB",
+              "store_url": "http://store.tcgplayer.com/magic/beta-edition/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Unlimited Edition",
+              "set_id": "2ED",
+              "rarity": "uncommon",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 657,
+              "number": "",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=657",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/657.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/2ED",
+              "store_url": "http://store.tcgplayer.com/magic/unlimited-edition/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Masters Edition IV",
+              "set_id": "ME4",
+              "rarity": "rare",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 202628,
+              "number": "77",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=202628",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/202628.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/ME4",
+              "store_url": "http://store.tcgplayer.com/magic/masters-edition-iv/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Limited Edition Alpha",
+              "set_id": "LEA",
+              "rarity": "uncommon",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 60,
+              "number": "",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=60",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/60.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/LEA",
+              "store_url": "http://store.tcgplayer.com/magic/alpha-edition/demonic-tutor?partner=DECKBREW"
+            },
+            {
+              "set": "Revised Edition",
+              "set_id": "3ED",
+              "rarity": "uncommon",
+              "artist": "Douglas Shuler",
+              "multiverse_id": 1155,
+              "number": "",
+              "layout": "normal",
+              "price": {
+                "low": 0,
+                "median": 0,
+                "high": 0
+              },
+              "url": "https://api.deckbrew.com/mtg/cards?multiverseid=1155",
+              "image_url": "https://image.deckbrew.com/mtg/multiverseid/1155.jpg",
+              "set_url": "https://api.deckbrew.com/mtg/sets/3ED",
+              "store_url": "http://store.tcgplayer.com/magic/revised-edition/demonic-tutor?partner=DECKBREW"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 10 Nov 2015 22:14:56 GMT
+recorded_with: VCR 3.0.0
