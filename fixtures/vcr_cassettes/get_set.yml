@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Wed, 11 Nov 2015 01:23:31 GMT
+      - Sun, 14 Feb 2016 02:32:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=da74e65f654e9c850e6873048a007e7f91447205011; expires=Thu, 10-Nov-16
-        01:23:31 GMT; path=/; domain=.deckbrew.com; HttpOnly
+      - __cfduid=dcb68c6f81d1996df9687f537191f46861455417169; expires=Mon, 13-Feb-17
+        02:32:49 GMT; path=/; domain=.deckbrew.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Expose-Headers:
@@ -54,7 +54,7 @@ http_interactions:
       Via:
       - 1.1 vegur
       Cf-Ray:
-      - 2436313b0b0f2204-EWR
+      - 27455d5c8cdd1834-EWR
     body:
       encoding: ASCII-8BIT
       string: |-
@@ -67,5 +67,5 @@ http_interactions:
           "cards_url": ""
         }
     http_version: 
-  recorded_at: Wed, 11 Nov 2015 01:23:31 GMT
-recorded_with: VCR 3.0.0
+  recorded_at: Sun, 14 Feb 2016 02:32:49 GMT
+recorded_with: VCR 3.0.1

@@ -7,11 +7,9 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_all_cards }
 
     it "gets all cards and parses bodies" do
-      expect(resp[:body]).to_not be_nil
-      resp[:body].each do |card|
+      resp.each do |card|
         expect(card["name"]).to_not be_nil
       end
-      expect(resp[:raw]).to_not be_nil
     end
   end
 
@@ -22,9 +20,8 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_card(id) }
 
     it "gets card with the given id" do
-      expect(resp[:body]).to_not be_nil
-      expect(resp[:body]["id"]).to eq id
-      expect(resp[:raw]).to_not be_nil
+      expect(resp).to_not be_nil
+      expect(resp["id"]).to eq id
     end
   end
 
@@ -35,8 +32,8 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_cards_filter(queries) }
 
     it "gets cards that match the criteria"  do
-      expect(resp[:body]).to_not be_nil
-      resp[:body].each do |card|
+      expect(resp).to_not be_nil
+      resp.each do |card|
         colors = card["colors"]
         if colors.include? "red"
           expect(colors).to include "red"
@@ -47,7 +44,6 @@ describe Deckbrew::API::DeckbrewAPI do
         expect(sets).to include "UNH"
         expect(card["types"]).to include "sorcery"
       end
-      expect(resp[:raw]).to_not be_nil
     end
   end
 
@@ -57,11 +53,10 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_all_sets }
 
     it "gets all cards and parses bodies" do
-      expect(resp[:body]).to_not be_nil
-      resp[:body].each do |set|
+      expect(resp).to_not be_nil
+      resp.each do |set|
         expect(set["name"]).to_not be_nil
       end
-      expect(resp[:raw]).to_not be_nil
     end
   end
 
@@ -72,8 +67,7 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_set(id) }
 
     it "returns the details of a single set" do
-      expect(resp[:body]["id"]).to eq id
-      expect(resp[:raw]).to_not be_nil
+      expect(resp["id"]).to eq id
     end
   end
 
@@ -83,9 +77,8 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_types }
 
     it "returns a list of all types" do
-      expect(resp[:body]).to be_a Array
-      expect(resp[:body]).to include "instant"
-      expect(resp[:raw]).to_not be_nil
+      expect(resp).to be_a Array
+      expect(resp).to include "instant"
     end
   end
 
@@ -95,9 +88,8 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_supertypes }
 
     it "returns a list of all supertypes" do
-      expect(resp[:body]).to be_a Array
-      expect(resp[:body]).to include "snow"
-      expect(resp[:raw]).to_not be_nil
+      expect(resp).to be_a Array
+      expect(resp).to include "snow"
     end
   end
 
@@ -107,9 +99,8 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_subtypes }
 
     it "returns a list of all subtypes" do
-      expect(resp[:body]).to be_a Array
-      expect(resp[:body]).to include "wizard"
-      expect(resp[:raw]).to_not be_nil
+      expect(resp).to be_a Array
+      expect(resp).to include "wizard"
     end
   end
 
@@ -119,9 +110,8 @@ describe Deckbrew::API::DeckbrewAPI do
     let(:resp) { Deckbrew::API::DeckbrewAPI.get_colors }
 
     it "returns a list of all colors" do
-      expect(resp[:body]).to be_a Array
-      expect(resp[:body]).to include "red"
-      expect(resp[:raw]).to_not be_nil
+      expect(resp).to be_a Array
+      expect(resp).to include "red"
     end
   end
 end
